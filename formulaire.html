@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tp2 HTML (formulaire)</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulaire Type</h1>
+      <h2>Coordonnees</h2>
+      <label for="fname">Nom</label>
+      <br />
+      <input id="fname" type="text" />
+      <br />
+      <br />
+      <label for="lname">Prenom</label>
+      <br />
+      <input id="lname" type="text" />
+      <br />
+      <br />
+      <label for="recoit">Je desire recevoir une documentation </label>
+      <input type="checkbox" id="recoit" />
+      <br />
+      <br />
+      <label for="options">Pays</label>
+      <select id="options" name="option">
+        <option value="unselected">- Choose -</option>
+        <option value="espagne">Espagne</option>
+        <option value="suisse">Suisse</option>
+        <option value="allemagne">Allemagne</option>
+      </select>
+      <br />
+      <br />
+      <label class="d">Sexe</label>
+      <input name="sexe" type="radio" id="fem" value="Feminin" />
+      <label for="fem">Feminin</label>
+      <input name="sexe" type="radio" id="masc" value="Masculin" />
+      <label for="masc">Masculin</label>
+      <h2>Domaine(s) d'activite</h2>
+      <p>Vous pouvez en choisir plus qu'un..</p>
+      <input type="checkbox" class="dom" /> <label for="ped">Pedagogie</label>
+      <input type="checkbox" class="dom" /> <label for="psy">Psychologie</label>
+      <input type="checkbox" class="dom" />
+      <label for="info">Informatique</label>
+      <input type="checkbox" class="dom" /> <label for="others">Autres..</label>
+      <br />
+      <br />
+      <h3>Commentaires</h3>
+      <p>Si vous le voulez, vous pouvez decrire vos activites ou interets.</p>
+      <textarea id="comnt" cols="78" rows="10"></textarea>
+      <br />
+      <br />
+      <button id="delete" onclick="deelete()">Effacer les donnees</button>
+      <button id="save" onclick="save()">Enregistrer les donnees</button>
+    </div>
+    <script src="coding.js"></script>
+  </body>
+</html>
